@@ -1,0 +1,70 @@
+<html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+background-color: transparent;
+width: 300px;
+height: 350px;
+border: 1px solid #f1f1f1;
+perspective: 1000px;
+}
+
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transitiom: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+position: absoulte;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-box-front {
+background-color: #bbb;
+color: black;
+}
+.flip-box-back {
+background-color: 2980b9;
+color: white;
+transform: rotateY(180deg);
+}
+</style>
+</head>
+</body>
+
+   <div class="flip-box">
+     <div class="flip-box-inner">
+       <div class="flip-box-front">
+           <img src="F:\Tanish folder\Madhubani art.jpg" alt="my image" 
+     style="width:300px;height:300px">
+     </div>
+        <div class="flip-box-back">
+          <div class="flip-card-back">
+          <h1>Madhubani Art</h1>
+          <p>Madhubani art (also known as Mithila art) is a style of painting practiced in the Mithila region of India and Nepal. It is named after the Madhubani district of Bihar, India, which is where it originated.
+This style of painting is characterized by its use of bright colors, geometric patterns, and stylized figures. Madhubani paintings are often used to decorate walls, floors, and furniture.
+Madhubani paintings often depict scenes from Hindu mythology, nature, and daily life. They are typically created by women in the Mithila region and have been passed down through generations.</p>
+          </div>
+       </div>
+    </div>
+ </div>
+ </body>
+ </html>
+
